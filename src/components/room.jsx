@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import defaultImg from '../images/room-1.jpeg'
 import PropTypes from "prop-types";
 
 const Room = ({ room }) => {
@@ -6,7 +7,7 @@ const Room = ({ room }) => {
   return (
     <article className="room">
       <div className="img-container">
-        <img src={images[0]} alt={name} />
+        <img src={images[0] || defaultImg} alt={name} />
         <div className="price-top">
           <h6>${price}</h6>
           <p>per night</p>
