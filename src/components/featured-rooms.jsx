@@ -6,6 +6,7 @@ import Room from "./room";
 
 const FeaturedRooms = () => {
   const { featuredRooms, loading } = useContext(RoomContext);
+  console.log(loading);
   return (
     <section className="featured-rooms">
       <Title title="featured rooms" />
